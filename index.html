@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El problema de Monty Hall</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="titulo">
+        <label for="">El problema de Monty Hall</label>
+    </div>
+    <div class="subtitulo">
+        <label for="" id="lblSub">Escoge una puerta para comenzar</label>
+    </div>
+    <div id="dAnuncio">
+        <label for="" >Victoria</label>    
+    </div>
+    <div class="puertas">
+        <div class="puerta1">
+            <button id="p1">
+                <img id="img1" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+            </button>
+        </div>
+        <div class="puerta2">
+            <button id="p2">
+                <img id="img2" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+            </button>
+        </div>
+        <div class="puerta3">
+            <button id="p3">
+                <img id="img3" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <label for="" class="lblPuntaje">Puntaje</label>
+        </div>
+        <div class="score">
+            <table>
+                <thead>
+                    <tr>
+                        <th>-----</th>
+                        <th>Cambiando</th>
+                        <th>Sin cambiar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Victorias</td>
+                        <td id="vict_camb">0</td>
+                        <td id="vict_no_camb">0</td>
+                    </tr>
+                    <tr>
+                        <td>Perdidas</td>
+                        <td id="perd_camb">0</td>
+                        <td id="perd_no_camb">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="nJuego">
+            <button id="btnJuego">Reiniciar Puntaje</button>
+            <button id="btnRonda">Nueva Ronda</button>
+        </div>
+    </div>
+</body>
+
+</html>
